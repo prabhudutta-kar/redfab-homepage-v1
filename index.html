@@ -1,0 +1,946 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/swiper.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css">
+   
+    <title>Redfab</title>
+</head>
+
+<body class="color">
+
+<!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light fixed-top" id="mainNav">
+<!--    <div class="container">-->
+      <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <i class="fas fa-bars"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-left">
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" style="padding-bottom: 20px!important;">
+              Getaways
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Places near Banglore</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Places near Chennai</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Places near Delhi</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Places near Goa</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Places near Hyderabad</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Places near Kolkata</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;">Collections</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Destinations
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Goa</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Manali</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Shimla</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Kashmir</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Himachal</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Kerala</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Andaman</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Rajasthan</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Ladakh</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;">Explore More</a>
+            </div>
+          </li>
+           <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Holiday Theme
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Hill Station</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Beaches</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Trekkings</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Road Trips</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Honeymoon</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Adventure</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Wildlife</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Water Activities</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Nature</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Deserts</a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;">Heritage</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Companion
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Spouse</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Family</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Friends</a>
+              <a class="dropdown-item" href="#" style="font-size: 13px!important;font-family: 'Montserrat', sans-serif!important;padding-top: 10px; padding-bottom: 10px;"><i class="fas fa-caret-right" style="color: rgb(200,200,200);margin-right: 3px;"></i> Alone</a>
+            </div>
+          </li>
+        </ul>
+        
+        <ul class="navbar-nav ml-auto" style="padding-bottom: 20px!important;">
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#services">Holiday Package</a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gallery">Hotel</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link js-scroll-trigger" href="#gallery">Flight</a>
+          </li>
+        </ul>
+      </div>
+<!--    </div>-->
+  </nav>
+
+  <!-- Header -->
+  <header class="masthead">
+    <div class="container d-flex h-100 align-items-center">
+      <div class="mx-auto text-center">
+        <h1 class="mx-auto my-0">Planning Your <span style="color: tomato!important;">Holidays</span></h1>
+        <form class="form-inline my-2 my-lg-0" style="margin-top: 30px!important;">
+          <input class="form-control mr-sm-2" type="search" placeholder="Where do you want to go?" aria-label="Search" style="margin-right: 0px!important;">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+       </form>
+      </div>
+    </div>
+  </header>
+  
+  
+<!-----------Top Destination------->
+
+
+<div class="topDestination">
+    <h3 class="subheading">Top Destinations</h3>
+    <p class="tagline">Travel to explore The world</p>
+<!-- Swiper -->
+  <div class="swiper-container">
+    <div class="swiper-wrapper">
+     
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+         <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div> 
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+         <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div> 
+      </div>
+      
+      <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+          <div class="content">
+              <div class="onhover">
+                  <div class="description">
+                     <h3>Goa</h3>
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                  </div>
+              </div>
+              <div class="beforehover">
+                  <div class="bottom-left">
+                      <h4>Goa</h4>
+                  </div> 
+                  <div class="bottom-right">
+                      <h5>3 Days</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+      
+    </div>
+    <!-- Add Arrows -->
+    <div class="swiper-button-next"><i class="fas fa-chevron-right fa-2x" style="margin-left: 16px;margin-top: 7px;"></i></div>
+    
+    <div class="swiper-button-prev"><i class="fas fa-chevron-left fa-2x" style="margin-left: 14px;margin-top: 7px;"></i></div>
+  </div>
+</div>
+
+
+
+<!-----------Top Activities------->
+
+
+<div class="topDestination" style="background-color: #fff; margin-top: 150px;">
+  <h3 class="subheading">Top Activities</h3>
+    <p class="tagline">Travel to explore The world</p>
+   <div class="inline">
+      <div class="information">
+         <h3 class="subheading" style="margin-top: 0px;font-size: 35px!important;font-weight: 600!important; text-align: left;border-left: 7px solid tomato!important;">Most Destinations</h3> 
+         <div class="row" style="margin-top: 50px;font-family: 'Montserrat', sans-serif;">
+             <ul style="display: inline-flex;">
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Beach </b><span style="font-size: 16px;">(10)</span> </li>
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Hill Stations </b><span style="font-size: 16px;">(10)</span> </li>
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Honeymoon </b><span style="font-size: 16px;">(10)</span> </li>
+             </ul>
+         </div>
+         <div class="row">
+             <ul style="display: inline-flex;">
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Adventure </b><span style="font-size: 16px;">(10)</span> </li>
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Heritage </b><span style="font-size: 16px;">(10)</span> </li>
+                <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Religious </b><span style="font-size: 16px;">(10)</span> </li>
+                 
+             </ul>
+         </div>
+         <div class="row">
+              <li style="float: right;margin-left: 38px;list-style-type: none;font-size: 18px;"><b>Wildlife </b><span style="font-size: 16px;">(10)</span> </li>
+          </div>
+      </div>
+       <!-- Swiper -->
+          <div class="swiper-container" style="float: right;width: 60%;">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                 <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                 <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right fa-2x" style="margin-left: 16px;margin-top: 7px;"></i></div>
+
+            <div class="swiper-button-prev"><i class="fas fa-chevron-left fa-2x" style="margin-left: 14px;margin-top: 7px;"></i></div>
+          </div>
+   </div>
+    
+
+</div>
+
+
+<!--------Packages in Demand--------->
+
+<div class="topDestination" style="padding-right: 10px;">
+<h3 class="subheading">Packages in Demand</h3>
+<p class="tagline">Travel to explore The world</p>
+ <div class="cardcontainer col-lg-12 col-sm-12 col-xs-12" style="margin: 0 auto!important;padding-right: 40px;">
+               <div class="card col-lg-4 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(./assets/img/goa.jpg);">
+                   <div class="bottom-left">
+                       <p style="color:white!important;font-size: 12px!important;letter-spacing: 1px!important;margin-bottom: 5px!important;">2N Nathula Pass | 2N MG Road</p>
+                       <h4 style="margin-bottom: 0px!important;">Enjoy Singapore</h4>
+                       <hr>
+                       <p style="color:white!important;">John Doe</p>
+                       <p><i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:white;"></i></p>
+                   </div>
+                   <div class="bottom-right" style="font-size: 19px;color: white!important;">
+                       INR 115000
+                   </div>
+               </div>
+               <div class="card col-lg-4 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(./assets/img/goa.jpg);">
+                   <div class="bottom-left" style="font-family: 'Cinzel', sans-serif!important;font-size: 17px;">
+                       <p style="color:white!important;font-size: 12px!important;letter-spacing: 1px!important;margin-bottom: 5px!important;">2N Nathula Pass | 2N MG Road</p>
+                       <h4 style="margin-bottom: 0px!important;">Enjoy Singapore</h4>
+                       <hr>
+                       <p style="color:white!important;">John Doe</p>
+                       <p><i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:white;"></i></p>
+                   </div>
+                   <div class="bottom-right" style="font-size: 19px;color: white!important;font-family: 'Poppins', sans-serif!important;">
+                       INR 115000
+                   </div>
+               </div>
+               <div class="card col-lg-4 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(./assets/img/goa.jpg);">
+                   <div class="bottom-left">
+                       <p style="color:white!important;font-size: 12px!important;letter-spacing: 1px!important;margin-bottom: 5px!important;">2N Nathula Pass | 2N MG Road</p>
+                       <h4 style="margin-bottom: 0px!important;">Enjoy Singapore</h4>
+                       <hr>
+                       <p style="color:white!important;">John Doe</p>
+                       <p><i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:white;"></i></p>
+                   </div>
+                   <div class="bottom-right" style="font-size: 19px;color: white!important;">
+                       INR 115000
+                   </div>
+             </div>
+      </div>
+      
+      <div class="cardcontainer col-lg-12 col-sm-12 col-xs-12" style="margin: 0 auto!important;padding-right: 40px;">
+               <div class="card col-lg-4 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(./assets/img/goa.jpg);">
+                   <div class="bottom-left">
+                       <p style="color:white!important;font-size: 12px!important;letter-spacing: 1px!important;margin-bottom: 5px!important;">2N Nathula Pass | 2N MG Road</p>
+                       <h4 style="margin-bottom: 0px!important;">Enjoy Singapore</h4>
+                       <hr>
+                       <p style="color:white!important;">John Doe</p>
+                       <p><i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:white;"></i></p>
+                   </div>
+                   <div class="bottom-right" style="font-size: 19px;color: white!important;">
+                       INR 115000
+                   </div>
+               </div>
+               <div class="card col-lg-4 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(./assets/img/goa.jpg);">
+                   <div class="bottom-left" style="font-family: 'Cinzel', sans-serif!important;font-size: 17px;">
+                       <p style="color:white!important;font-size: 12px!important;letter-spacing: 1px!important;margin-bottom: 5px!important;">2N Nathula Pass | 2N MG Road</p>
+                       <h4 style="margin-bottom: 0px!important;">Enjoy Singapore</h4>
+                       <hr>
+                       <p style="color:white!important;">John Doe</p>
+                       <p><i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:white;"></i></p>
+                   </div>
+                   <div class="bottom-right" style="font-size: 19px;color: white!important;font-family: 'Poppins', sans-serif!important;">
+                       INR 115000
+                   </div>
+               </div>
+               <div class="card col-lg-4 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5)),url(./assets/img/goa.jpg);">
+                   <div class="bottom-left">
+                       <p style="color:white!important;font-size: 12px!important;letter-spacing: 1px!important;margin-bottom: 5px!important;">2N Nathula Pass | 2N MG Road</p>
+                       <h4 style="margin-bottom: 0px!important;">Enjoy Singapore</h4>
+                       <hr>
+                       <p style="color:white!important;">John Doe</p>
+                       <p><i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:rgb(245,166,35);"></i> <i class="fas fa-star" style="color:white;"></i></p>
+                   </div>
+                   <div class="bottom-right" style="font-size: 19px;color: white!important;">
+                       INR 115000
+                   </div>
+             </div>
+      </div>
+ </div>
+ 
+ <!-----------Top Place By State------->
+
+
+<div class="topDestination" style="background-color: #fff;margin-top: 320px;">
+  <h3 class="subheading">Top Place By State</h3>
+    <p class="tagline">Travel to explore The world</p>
+   <div class="inline">
+      <div class="information">
+         <h3 class="subheading" style="margin-top: 0px;font-size: 35px!important;font-weight: 600!important; text-align: left;border-left: 7px solid tomato!important;">Most Destinations</h3> 
+         <div class="row" style="margin-top: 50px;font-family: 'Montserrat', sans-serif;">
+             <ul style="display: inline-flex;">
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Beach </b><span style="font-size: 16px;">(10)</span> </li>
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Hill Stations </b><span style="font-size: 16px;">(10)</span> </li>
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Honeymoon </b><span style="font-size: 16px;">(10)</span> </li>
+             </ul>
+         </div>
+         <div class="row">
+             <ul style="display: inline-flex;">
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Adventure </b><span style="font-size: 16px;">(10)</span> </li>
+                 <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Heritage </b><span style="font-size: 16px;">(10)</span> </li>
+                <li style="float: right;margin-right: 30px;list-style-type: none;font-size: 18px;"><b>Religious </b><span style="font-size: 16px;">(10)</span> </li>
+                 
+             </ul>
+         </div>
+         <div class="row">
+              <li style="float: right;margin-left: 38px;list-style-type: none;font-size: 18px;"><b>Wildlife </b><span style="font-size: 16px;">(10)</span> </li>
+          </div>
+      </div>
+       <!-- Swiper -->
+          <div class="swiper-container" style="float: right;width: 60%;">
+            <div class="swiper-wrapper">
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                 <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                 <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div> 
+              </div>
+
+              <div class="swiper-slide" style="background-image:linear-gradient(rgba(0,0,0,0.2), rgba(0,0,0,0.9)), url(./assets/img/goa.jpg);">
+                  <div class="content">
+                      <div class="onhover">
+                          <div class="description">
+                             <h3>Goa</h3>
+                             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore maxime obcaecati doloribus veniam, laboriosam natus nesciunt ex illum facilis et!</p> 
+                          </div>
+                      </div>
+                      <div class="beforehover">
+                          <div class="bottom-left">
+                              <h4>Goa</h4>
+                          </div> 
+                          <div class="bottom-right">
+                              <h5>3 Days</h5>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+            <!-- Add Arrows -->
+            <div class="swiper-button-next"><i class="fas fa-chevron-right fa-2x" style="margin-left: 16px;margin-top: 7px;"></i></div>
+
+            <div class="swiper-button-prev"><i class="fas fa-chevron-left fa-2x" style="margin-left: 14px;margin-top: 7px;"></i></div>
+          </div>
+   </div>
+</div>
+
+ 
+ 
+<div class="topDestination" style="height: 660px; margin-bottom: 300px; padding-right: 20px; padding-top: 10px;background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.8)), url(./assets/img/goa.jpg);background-position: center;background-repeat: no-repeat;background-attachment: fixed;background-size: cover;">
+    <h3 class="subheading" style="font-size: 55px!important;color: white!important;font-family: 'Cinzel', sans-serif;margin-bottom: 0!important;">Holiday Theme</h3>
+    <p class="tagline" style="color: rgb(230,230,230);">Travel to explore The world</p>
+     <div class="cardcontainer col-lg-12 col-sm-12 col-xs-12" style="margin: 0 auto!important;padding-right: 40px;">
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Dancing Script', cursive;">Adventure</h3>
+               </div>
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Courgette', cursive;">Adventure</h3>
+               </div>
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Pacifico', cursive;">Adventure</h3>
+               </div>
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Ma Shan Zheng', cursive;">Adventure</h3>
+               </div>
+      </div>
+      
+      <div class="cardcontainer col-lg-12 col-sm-12 col-xs-12" style="margin: 0 auto!important;padding-right: 40px;">
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                    <h3 class="centered" style="font-family: 'Satisfy', cursive;">Adventure</h3>
+               </div>
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Kaushan Script', cursive;">Adventure</h3>
+               </div>
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.3)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Pacifico', cursive;">Adventure</h3>
+               </div>
+               <div class="card col-lg-3 col-sm-12 col-xs-12" style="background-image:linear-gradient(rgba(0,0,0,0.4), rgba(0,0,0,0.4)),url(./assets/img/goa.jpg);height: 200px;">
+                   <h3 class="centered" style="font-family: 'Courgette', cursive;">Adventure</h3>
+               </div>
+      </div>
+</div>
+ 
+ 
+<!------Script-------->
+   
+    <script src="./assets/js/swiper.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+    
+    <!-- Initialize Swiper -->
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      speed: 1500,
+      slidesPerView: 3,
+      spaceBetween: 30,
+      slidesPerGroup: 3,
+      loop: true,
+      loopFillGroupWithBlank: true,
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    });
+  </script>
+
+
+</body>
+</html>
